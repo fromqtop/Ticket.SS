@@ -1,0 +1,34 @@
+# root
+dist
+node_modules
+.clasp.json
+appsscript.json
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# backend
+backend/dist
+backend/node_modules
+
+# Editor directories and files
+backend/.vscode/*
+backend/!.vscode/extensions.json
+backend/.idea
+backend/.DS_Store
+backend/*.suo
+backend/*.ntvs*
+backend/*.njsproj
+backend/*.sln
+backend/*.sw?
+
+# frontend
+# frontend/.gitignore

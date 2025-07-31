@@ -1,0 +1,26 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "copy:frontend": "copyfiles -u 2 \"frontend/dist/**/*\" dist/",
+    "copy:backend": "copyfiles -u 2 \"backend/dist/**/*\" dist/",
+    "copy:config": "copyfiles appsscript.json dist",
+    "build": "npm run clean && npm run build:frontend && npm run build:backend && npm run copy:frontend && npm run copy:backend && npm run copy:config && clasp push"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.99",
+    "copyfiles": "^2.4.1",
+    "esbuild": "^0.25.5",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.3"
+  }
+}
