@@ -26,7 +26,7 @@ Web アプリとして使えるようになります。
 1. [コピー用ページ](https://docs.google.com/spreadsheets/d/1HKVPRi7Qyz1Xwme5stQzeRWSfuhWj4o0pmkKktDwbUU/copy)を開き「コピーを作成」ボタンを押す。  
    <img src="./docs/usage_create-copy.png" width=500>
 
-   テンプレートがマイドライブにコピーされます。ほかのフォルダに移動したり、ファイル名を変更しても問題ありません。
+   テンプレートがマイドライブにコピーされます。ほかのフォルダに移動したり、ファイル名を変更しても問題ありません。  
    <img src="./docs/usage_copied-spreadsheet.png" width=500>
 
 2. 「課題一覧」や「QA 一覧」シートはあくまでサンプルです。  
@@ -43,26 +43,26 @@ Web アプリとして使えるようになります。
    | fieldName | 項目名。データシート上の列名と一致させてください。（全項目を選択してコピーして、右クリックメニュー「特殊貼り付け」→「転置して貼り付け」を使うと簡単です。） |
    | isId | ID となる項目にチェック。1 つのシートにつき、必ず 1 項目を選択してください。 |
    | isTitle | タイトルとなる項目にチェック。1 つのシートにつき 1 項目指定できます。 |
-   | type※ | 項目の形式を選択してください。この設定により、WEB 画面の入力フィールドの形式が変わります。※ |
+   | type ※ | 項目の形式を選択してください。この設定により、WEB 画面の入力フィールドの形式が変わります。 |
    | editable | 編集を許可する項目にチェック。未チェックの項目は、編集画面で入力欄が非活性になります。 |
    | shownInTable | WEB 画面の一覧表に表示する項目にチェック。未チェックの項目は、一覧表に表示されません。（登録画面・編集画面には表示されます） |
    | enableFilter | WEB 画面の一覧表でフィルタを有効にする項目にチェック。 |
    | options | 「type」を「select」にした場合、プルダウンの選択肢をカンマ区切りで入力。<入力例> 低,中,高 |
 
    ※ type の設定値一覧  
-    text:  
+   `text`:  
     <img src="./docs/type-text.png" width=500>
 
-   textarea:  
+   `textarea`:  
     <img src="./docs/type-textarea.png" width=500>
 
-   select:  
+   `select`:  
     <img src="./docs/type-select.png" height=190>
 
-   date:  
+   `date`:  
     <img src="./docs/type-date.png" height=330>
 
-   comments:  
+   `comments`:  
     <img src="./docs/type-comments.png" width=500>
 
 4. 利用者の登録  
