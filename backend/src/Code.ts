@@ -6,10 +6,15 @@ const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
 function doGet(
   e: GoogleAppsScript.Events.DoGet
 ): GoogleAppsScript.HTML.HtmlOutput {
-  return HtmlService.createTemplateFromFile("index")
-    .evaluate()
-    .setTitle("Ticket.SS")
-    .addMetaTag("viewport", "width=device-width, initial-scale=1");
+  try {
+    const _ = getLoginUser();
+    return HtmlService.createTemplateFromFile("index")
+      .evaluate()
+      .setTitle("Ticket.SS")
+      .addMetaTag("viewport", "width=device-width, initial-scale=1");
+  } catch {
+    return HtmlService.createHtmlOutput("<p>アクセス権限がありません。</p>");
+  }
 }
 
 const getLoginUser: GasFunctions["getLoginUser"] = () => {
